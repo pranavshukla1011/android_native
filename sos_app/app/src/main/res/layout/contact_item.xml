@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingVertical="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:text="Name"
+                android:layout_weight="2"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/tvPhoneNo"
+                android:text="Phone Number"
+                android:layout_weight="8"
+                android:layout_marginEnd="8dp"/>
+<!--            <Button-->
+<!--                android:id="@+id/btnEditContact"-->
+<!--                android:text="Edit"-->
+<!--                android:textSize="12sp"-->
+<!--                android:layout_weight="1"-->
+<!--                />-->
+            <Button
+                android:id="@+id/btnDeleteContact"
+                android:text="Delete"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                />
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
